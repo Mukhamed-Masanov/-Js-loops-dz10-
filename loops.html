@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loops</title>
+</head>
+<body>
+<!--Задания c использованием цикла WHILE-->
+<script>
+    //1
+    // let a = +prompt('Введите число') , i = 1 , j = '';
+    // while( i <= a){
+    //  i++;
+    //  j+="#";
+    // }
+    // document.write(`${j}`);
+
+    //2
+    // let b = +prompt('Введите число') , i = 0;
+    // while( i <= b ){
+    //     document.write(`${b} <br>`);
+    //     b--;
+    // }
+
+    //3
+    // let c = +prompt('Введите число') , d = +prompt('Введите степень в которую хотите возвести') , i = 1 , e = c;
+    //  while( i < d ){
+    //      c = c * e;
+    //      i++
+    //  }
+    // alert(c);
+
+    //4
+    //    let num1 = +prompt('введите число') ,num2 = +prompt('введите число'), num1I = 1 , num1J = undefined , num2J = undefined ;
+    //    while (num1 >= num1I ){
+    //        num1I++
+    //        num1J = num1 % num1I ;
+    //        num2J = num2 % num1I;
+    //        if (num1J || num2J !== 0 ){
+    //            continue;
+    //        }
+    //        document.write(`${num1I}<br>`);
+    //    }
+
+    //5
+    // let  f = +prompt('Введите число')  ,i = 1 , j = 1;
+    // if(f < 0){
+    //     document.write('Операция не может быть выполнена')
+    // }
+    // else {
+    //     while (i <= f) {
+    //         if (f < 0) {
+    //             break;
+    //         }
+    //         j *= i;
+    //         i++;
+    //     }
+    //     document.write(`${j}`);
+    // }
+</script>
+
+<!--Задания с использованием цикла DO WHILE-->
+<script>
+    //1
+    // do{
+    //     let ans = +prompt('Посчтитайте чему равно выражение 2 + 2 *2');
+    //     if(ans === 6){
+    //         break;
+    //     }
+    // }    while (true);
+    //
+    //     //2
+    //     let i = 0 , variable = 1000;
+    //     do{
+    //         i++;
+    //         variable /=  2;
+    //     }while (variable >= 50);
+    //     document.write(` понадобилось ${i} попыток  число ${variable}`)
+</script>
+
+<!--Задания с использованием цикла FOR-->
+<script>
+    //3
+    // let number1 = +prompt('Введите число');
+    // for( let i = 2 ; i <= 100 ;i++){
+    //   let j2  = i % number1;
+    //   if( j2 !== 0){
+    //       continue;
+    //   }
+    //    document.write(`${i} <br>`);
+    // }
+
+    //4
+    // let minPoint = +prompt('Укажите точку отсчета'), maxPoint = +prompt('Укажите точку конца');
+    // if(minPoint > maxPoint){
+    //     for (let i = minPoint ; i > maxPoint;  ){
+    //         i = i  - 4 ;
+    //         if( i < maxPoint){
+    //             break;
+    //         }
+    //         document.write(`${i} <br>`);
+    //     }
+    // }else {
+    //     for (let i = minPoint; i < maxPoint;) {
+    //         i = i + 4;
+    //         if (i > maxPoint) {
+    //             break;
+    //         }
+    //         document.write(`${i} <br>`);
+    //     }
+    // }
+
+    //5
+   //  let number2 = +prompt('Введите число');
+   // skip:for(let i = 2 ; i <= number2  ;i++ ) {
+   //     for (let j = 2; j < number2; j++) {
+   //         if (number2 % j === 0) {
+   //             alert('Составное число')
+   //             break skip;
+   //         }
+   //     }
+   //      document.write(`${number2} Простое число  <br>`)
+   // }
+</script>
+</body>
+</html>
